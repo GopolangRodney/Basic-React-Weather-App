@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6fb1fc, #5c8df7);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .search {
+    margin: 100px;
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+
+  .searchbar {
+    padding: 10px;
+    width: 200%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-}
+
+  .container{
+    background: rgba(255, 255, 255, 0.3);
+     padding: 20px;
+     border-radius: 15px;
+  }
+
+  .top {
+    margin-bottom: 20px;
+  }
+
+  .location p {
+    font-size: 28px;
+    color: #16413e;
+    font-weight: 500;
+  }
+  .temp h1 {
+    font-size: 64px;
+    color: #154747;
+    text-shadow: #16413e;
+    
+  }
+
+  .description{
+    font-size: 18px;
+    color: #555454;
+    text-transform: uppercase;   
+    font-weight: bold; 
+    
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .bottom div {
+    flex: 1;
+  }
+
+  .feels, .humidity, .wind {
+    color: #180f0f;
+    border-color: #154747;
+    box-sizing: border-box;
+
+  }
+
+  .feels p, .humidity p, .wind p {
+    margin: 5px 0;
+    
+  }
+
+  .bold {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .temp h1 {
+    font-size: 48px;
+  }
